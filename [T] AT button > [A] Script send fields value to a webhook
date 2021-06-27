@@ -1,15 +1,9 @@
 /* Pick from a table */
-let table = base.getTable("משפחות נתמכות 🎁");
+let table = base.getTable("TABLE NAME"); //<<Put your table name
 let record = await input.recordAsync('Pick a record', table);
 if (record) {
-    //import fields records
-    console.log(`You picked ${record.getCellValueAsString("קוד נתמך (אוטומטי)")}`);
-   
-
- 
-    
     //Get Records fields 
-    let response = await fetch('WEBHOOK URL ADDRESS', {
+    let response = await fetch('WEBHOOK URL ADDRESS', { //<< Put the webhook URL address
         method: 'POST',
         body: JSON.stringify({
             "FullName": record.getCellValueAsString('שם מלא'),
