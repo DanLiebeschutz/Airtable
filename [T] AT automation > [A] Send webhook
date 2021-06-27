@@ -1,0 +1,3 @@
+let inputConfig = input.config();
+// You need to define all the variables for input.config() in AT in the window to the left
+fetch(`WEBHOOK_URL_ADDRESS?mail=${inputConfig.email}&phone=${inputConfig.phone}&first_name=${inputConfig.first_name}&last_name=${inputConfig.last_name}`);
