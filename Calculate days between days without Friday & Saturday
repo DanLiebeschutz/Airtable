@@ -1,0 +1,3 @@
+
+//Not Finish yet
+IF(WORKDAY_DIFF(Date1,Date2)>=5,WORKDAY_DIFF(Date1,Date2)-1,WORKDAY_DIFF(Date1,Date2))-IF(WEEKDAY(Date1,"Sunday")=4,1,0)-IF(WEEKDAY(Date2,"Sunday")=5,1,0)
